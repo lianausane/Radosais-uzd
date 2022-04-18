@@ -21,7 +21,8 @@ x=int(input("Ievadiet skaitli! kuru pievienosim izveidotajam sarakstas intervāl
 sk.append(x)   
 
 print(sk)
-
+sk.sort()
+print(sk)
 for num in sk:
     if num % 2 == 0:
         print(num)
