@@ -14,7 +14,8 @@ print(sk)
 x=int(input("Ievadiet skaitli! kuru pievienosim izveidotajam sarakstas intervālā no -100 līdz 100:"))
 sk.append(x)   
 
-
+sk.sort()
+print(sk)
 """
 for num in sk:
     if num % 2 == 0:
