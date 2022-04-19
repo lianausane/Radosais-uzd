@@ -4,6 +4,7 @@ a = "Uzdevums- Izveidot sarakstu kurā ir noteikts skaits skailū un šo skaitu 
 print(a)
 print( )
 sk = []
+n = -1
 while n < 20 or n > 50:
     n = int(input("Cik skaitļu būs saraksta? (Ievadiet skaitli intervālā no 20 līdz 50.)"))
     if n < 20:
@@ -22,13 +23,17 @@ sk.append(x)
 
 print(sk)
 sk.sort()
-print(sk)
+print("Izvadu sakartotu sarakstu augošā secībā", sk)
+
+ne = []
+pa = []
 for num in sk:
     if num % 2 == 0:
-        print(num)
+        pa.append(num)
+    else:
+        ne.append(num,)    
+print("Nepāra skaitļi ir šadi ", ne)
+print("Pāra skaitļi ir šadi ", pa)
 
-
-for num in sk:
-    if num % 2 == 0:
-        print(num)    
+ 
        
