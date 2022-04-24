@@ -1,3 +1,5 @@
+import lia
+
 print( )
 a = "Uzdevums- Izveidot sarakstu kurā ir noteikts skaits skailū un šo skaitu ievada cilvēks, programma aprēkina videjo aritmētisko, nosaka cik ir pāra un nepāra  skaiļu, cik ir pozitīvi un cik negatīvi skaiļi, skaiļus sakotnējā saraktā saliek pēc kartas augošā secībā jaunā sarakstā  " 
 
@@ -12,16 +14,19 @@ while n < 20 or n > 50:
     elif n > 50:
         print("šis skaitlis neder, jo ir lielāks par 50. Ievadi vēlreiz:")
 import random
-
+summa = 0
 for i in range(n):
-    sk.append(random.randrange(-100, 100))
+    a = random.randrange(-100, 100)
+    summa += a
+    sk.append(a)
 print(sk)
-
+print("Visu skaitļu suma ir ", summa)
+print("Vidējā aritmētiskā ir ", lia.videjaaritmetiska(summa, n))
 
 x=int(input("Ievadiet skaitli! kuru pievienosim izveidotajam sarakstas intervālā no -100 līdz 100:"))
 sk.append(x)   
 
-print(sk)
+print("Jauniegūtais saraksts"sk)
 sk.sort()
 print("Izvadu sakartotu sarakstu augošā secībā", sk)
 
