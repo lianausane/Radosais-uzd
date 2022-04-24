@@ -1,5 +1,3 @@
-import lia
-
 print( )
 a = "Uzdevums- Izveidot sarakstu kurā ir noteikts skaits skailū un šo skaitu ievada cilvēks, programma aprēkina videjo aritmētisko, nosaka cik ir pāra un nepāra  skaiļu, cik ir pozitīvi un cik negatīvi skaiļi, skaiļus sakotnējā saraktā saliek pēc kartas augošā secībā jaunā sarakstā  " 
 
@@ -21,12 +19,17 @@ for i in range(n):
     sk.append(a)
 print(sk)
 print("Visu skaitļu suma ir ", summa)
-print("Vidējā aritmētiskā ir ", lia.videjaaritmetiska(summa, n))
-
+print()
+print("Vidējā aritmētiskā ir ", summa/n )
+print()
+m = min(sk)
+l = max(sk)
+print("Mazākā vertība sarakstā ir", m)
+print("Lielākā vērtība sarakstā ir", l)
 x=int(input("Ievadiet skaitli! kuru pievienosim izveidotajam sarakstas intervālā no -100 līdz 100:"))
 sk.append(x)   
 
-print("Jauniegūtais saraksts"sk)
+print("Jauniegūtais saraksts", sk)
 sk.sort()
 print("Izvadu sakartotu sarakstu augošā secībā", sk)
 
@@ -38,6 +41,7 @@ for num in sk:
     else:
         ne.append(num,)    
 print("Nepāra skaitļi ir šadi ", ne)
+print()
 print("Pāra skaitļi ir šadi ", pa)
 
  
